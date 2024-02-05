@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-страница</title>
+    <link rel="stylesheet" href="css/stylesTop.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px; /* высота фона */
+            background-image: url('photos/background.png'); /* путь к вашей картинке */
+            background-size: cover; /* настройка размеров изображения */
+            z-index: -1; /* помещаем фон под контент */
+        }
+        h1 {
+            color: #fff; /* настройка цвета текста, чтобы было видно на изображении */
+        }
+
+    </style>
+</head>
+<body>
+
+<a href="https://t.me/darkstore_market" class="text-with-icon" style="left: 100px; top: 50px;  margin-right: 20px;">
+    <div class="icon"></div>
+    <span class="text">Telegram</span>
+</a>
+
+<div class="top_text_help_main" style="left: 1000px">
+    <a class="text" href="#">Помощь</a>
+    <div class="arrow"></div>
+    <div class="tooltip">
+        <button><a href="#">Ссылка 1</a></button>
+        <button><a href="#">Ссылка 2</a></button>
+        <button><a href="#">Ссылка 3</a></button>
+        <button><a href="#">Ссылка 4</a></button>
+        <button><a href="#">Ссылка 5</a></button>
+        <button><a href="#">Ссылка 6</a></button>
+    </div>
+</div>
+
+</body>
+</html>

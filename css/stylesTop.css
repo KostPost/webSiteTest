@@ -1,0 +1,123 @@
+
+/*     Telegram button    */
+.text-with-icon .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../photos/tg.png");
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+}
+
+.text {
+    margin-top: 5px;
+    font-size: 25px;
+    color: #000000;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.text-with-icon:hover .text {
+    color: #ffffff;
+}
+
+/*     Telegram button    */
+
+/*  Help button  */
+.top_text_help_main {
+    position: absolute;
+    display: inline-block;
+    left: 1800px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 5px;
+    font-size: 25px;
+    color: #808080;
+    position: relative;
+    transition: color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #ffffff;
+    margin-left: 5px;
+    margin-top: -10px;
+    transition: transform 0.3s;
+}
+
+.text:hover {
+    color: #ffffff;
+}
+
+.tooltip {
+    opacity: 0;
+    width: 150px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -300px;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ccc; /* серый цвет кнопок */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.3s; /* добавлена анимация при наведении на кнопку */
+}
+
+.tooltip button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.tooltip button:first-child {
+    margin-top: 0;
+}
+
+.top_text_help_main:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip:hover {
+    opacity: 1;
+}
+
+.top_text_help_main:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.tooltip button:hover {
+    background-color: #fff; /* изменен цвет кнопок на белый при наведении */
+    color: #333;
+}
+
+/*  Help button  */
