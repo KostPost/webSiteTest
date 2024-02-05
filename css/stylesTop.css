@@ -19,34 +19,25 @@
 .text {
     margin-top: 5px;
     font-size: 25px;
-    color: #000000;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.text-with-icon:hover .text {
-    color: #ffffff;
-}
-
-/*     Telegram button    */
-
-/*  Help button  */
-.top_text_help_main {
-    position: absolute;
-    display: inline-block;
-    left: 1800px;
-    top: 50px;
-    cursor: pointer;
-}
-
-.text {
-    margin-top: 5px;
-    font-size: 25px;
     color: #808080;
     position: relative;
     transition: color 0.3s;
     text-decoration: none;
     display: inline-block;
+}
+
+.text-with-icon:hover .text {
+    color: #ffffff;
+}
+/*     Telegram button    */
+
+
+/*  Help button  */
+.top_text_help_main {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    cursor: pointer;
 }
 
 .arrow {
@@ -66,58 +57,189 @@
 }
 
 .tooltip {
-    opacity: 0;
-    width: 150px;
-    background-color: #ccc;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
+    display: none;
     position: absolute;
+    width: 300px; /* изменено на 300px */
+    background-color: white; /* изменено на белый */
+    color: #000;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
     z-index: 1;
-    right: 0;
-    bottom: -300px;
-    transition: opacity 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.tooltip button {
+.tooltip .container {
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000; /* изменено на красный */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip .link {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    background-color: #ccc; /* серый цвет кнопок */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    position: relative;
-    z-index: 2;
-    transition: background-color 0.3s; /* добавлена анимация при наведении на кнопку */
-}
-
-.tooltip button a {
+    height: 33.33%;
+    text-align: center;
     text-decoration: none;
-    color: #000000;
+    color: #333;
+    transition: background-color 0.2s ease;
 }
 
-.tooltip button:first-child {
-    margin-top: 0;
+.tooltip .link:hover {
+    background-color: #ccc;
 }
 
 .top_text_help_main:hover .tooltip {
-    opacity: 1;
-}
-
-.tooltip:hover {
-    opacity: 1;
+    display: block;
 }
 
 .top_text_help_main:hover .arrow {
     transform: rotate(180deg);
 }
 
-.tooltip button:hover {
-    background-color: #fff; /* изменен цвет кнопок на белый при наведении */
-    color: #333;
+.tooltip a:hover {
+    background-color: #ccc;
 }
 
 /*  Help button  */
+
+
+/* Category  */
+.category-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-button .menu-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-button .menu-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+/* Category  */
+
+
+
+/*   FIND  */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 700px;
+    padding: 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #999;
+    outline: none;
+}
+
+.search-input:focus {
+    color: #000;
+}
+
+.search-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*   FIND  */
+
+
+
+/* LOGIN */
+.oval-link-login {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    width: 70px; /* Укажите нужную ширину и высоту */
+    height: 70px;
+    text-align: center;
+    line-height: 70px; /* Выравниваем текст по центру */
+    color: black;
+    text-decoration: none;
+}
+/* LOGIN */
+
+
+
+/*  CORZINA */
+.circle-container-corzina {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-container-corzina img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+/*  CORZINA */
+
+
+.container {
+    width: 300px; /* adjust as needed */
+    height: 300px; /* adjust as needed */
+    background-color: #ff0000; /* change to white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 33.33%; /* one-third of the height of the container */
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease; /* add transition for smoother hover effect */
+}
+
+.link:hover {
+    background-color: #ccc; /* change to gray on hover */
+}
+
+
+
+
+
+
+
+
+
+

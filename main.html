@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 150px; /* высота фона */
+            height: 300px; /* высота фона */
             background-image: url('photos/background.png'); /* путь к вашей картинке */
             background-size: cover; /* настройка размеров изображения */
             z-index: -1; /* помещаем фон под контент */
         }
+
         h1 {
             color: #fff; /* настройка цвета текста, чтобы было видно на изображении */
         }
+
 
     </style>
 </head>
@@ -36,17 +38,67 @@
     <span class="text">Telegram</span>
 </a>
 
-<div class="top_text_help_main" style="left: 1000px">
-    <a class="text" href="#">Помощь</a>
+
+<div class="top_text_help_main" style="position: absolute; left: 870px; top:50px;">
     <div class="arrow"></div>
+    <div class="text">Помощь</div>
     <div class="tooltip">
-        <button><a href="#">Ссылка 1</a></button>
-        <button><a href="#">Ссылка 2</a></button>
-        <button><a href="#">Ссылка 3</a></button>
-        <button><a href="#">Ссылка 4</a></button>
-        <button><a href="#">Ссылка 5</a></button>
-        <button><a href="#">Ссылка 6</a></button>
+        <div class="container">
+            <a class="link" href="#">Ссылка 1</a>
+            <a class="link" href="#">Ссылка 2</a>
+            <a class="link" href="#">Ссылка 3</a>
+        </div>
     </div>
+</div>
+
+<a href="#" class="text" style="left: 1010px; top: 50px">
+    Замена
+</a>
+
+<a href="#" class="text" style="left: 1040px; top: 50px">
+    Поставщикам
+</a>
+
+<a href="#" class="text" style="left: 1070px; top: 50px">
+    Контакты
+</a>
+
+<a href="#" class="text" style="left: 1100px; top: 50px">
+    Правила
+</a>
+
+<a href="#" style="position: absolute; left: 100px; top: 100px">
+    <img src="photos/icon.png" alt="Описание изображения" width="150" height="150">
+</a>
+
+
+<button class="category-button" style="position: absolute; left: 300px; top: 140px; width: 200px">
+    Категория
+    <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</button>
+
+
+<div class="search-container" style="position: absolute; left: 550px; top: 135px">
+    <input type="text" class="search-input" value="Поиск..." onfocus="if (this.value=='Поиск...') this.value='';">
+    <button class="search-button" onclick="performSearch()">П</button>
+</div>
+
+
+<a href="#" class="oval-link-login" style="position: absolute; left: 1400px; top: 135px">Войти</a>
+
+
+<a href="#" target="_blank" class="circle-container-corzina" style="position: absolute; top: 135px; left: 1500px">
+    <img src="photos/corzina.png" alt="Your Photo">
+</a>
+
+<div class="container" style="position: absolute; top: 400px">
+    <a href="#1" class="link">Link 1</a>
+    <a href="#2" class="link">Link 2</a>
+    <a href="#3" class="link">Link 3</a>
 </div>
 
 </body>
